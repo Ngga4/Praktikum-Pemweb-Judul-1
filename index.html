@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Percobaan 1 -->
+<body>
+    <header>
+        <h1>
+            Sistem Informasi Data Mahasiswa - Praktikum 1 - Kelas PWC
+        </h1>
+        <p>Sistem Informasi berupa data mahasiswa Teknik Informatika.</p>
+        <img src="2415061071.jpg" alt="" style="height: 25%; width: 25%;">
+    </header>
+    <hr>
+    <nav>
+        <li>
+            <a href="#informasi"></a>
+        </li>
+        <li><a href="#daftar-mahasiswa"></a></li>
+        <li> <a href="#form-tambah"></a></li>
+    </nav>
+    <hr>
+
+<!-- Percobaan 2 -->
+    <main>
+        <section id="informasi">
+            <h2>Informasi Sistem</h2>
+            <p>Section ini berupa informasi sistem mahasiswa teknik informatika.</p>
+
+            <article>
+                <h3>Artikel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eaque sed consectetur.</p>
+            </article>
+        </section>
+        <hr>
+
+<!-- Percobaan 3 -->
+        <section id="daftar-mahasiswa">
+            <h2>Daftar Mahasiswa Aktif</h2>
+            <p>Daftar lengkap mahasiswa aktif</p>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Foto</th>
+                        <th>NPM</th>
+                        <th>Nama Lengkap</th>
+                        <th>Program Studi</th>
+                        <th>Angkatan</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="images (3).jpg" alt="" style="height: 25%; width: 25%; "></td>
+                        <td>2415061054</td>
+                        <td>Akhmad Faishal Kharisma</td>
+                        <td>Teknik Informatika</td>
+                        <td>2024</td>
+                        <td><a href="akhmadfaishalkharisma@gmail.com">akhmadfaishalkharisma@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="images (3).jpg" alt="" style="height: 25%; width: 25%; "></td>
+                        <td>2415061069</td>
+                        <td>Muhammad Nabil Pasha</td>
+                        <td>Teknik Informatika</td>
+                        <td>2024</td>
+                        <td><a href="nabilpasha@gmail.com">nabilpasha@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img src="images (3).jpg" alt="" style="width: 25%; height: 25%;"></td>
+                        <td>2415061088</td>
+                        <td>Alif Pasha</td>
+                        <td>Teknik Informatika</td>
+                        <td>2024</td>
+                        <td><a href="alifpasha@gmail.com">alifpasha@gmail.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+<!-- Percobaan 4 -->
+        <hr>
+        <section id="form-tambah">
+            <h2>Tambah Mahasiswa Baru</h2>
+            <p>Tambah Mahasiswa dibawah ini</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Judul</legend>
+                    <p>
+                        <label for="npm">
+                            Nomor Pokok Mahasiswa(NPM)
+                        </label>
+                        <br>
+                        <input type="text" id="npm" name="npm" placeholder="Contoh : 2415061071" required pattern="[0-9]{8,12}" title="NPM harus berupa angka 8-12 digit">
+                        <br>
+                        <small>
+                            Isi NPM anda diatas
+                        </small>
+                    </p>
+                    <p>
+                        <label for="nama">
+                            Nama Lengkap
+                        </label>
+                        <br>
+                        <input type="text" id="nama" name="nama" placeholder="Contoh : Angga Saputra" required minlength="3" maxlength="100">
+                        <br>
+                        <small>
+                            Isi Nama Lengkap diatas
+                        </small>
+                    </p>
+                    <p>
+                        <label for="program-studi">
+                            Program Studi
+                        </label>
+                        <br>
+                        <select name="program-studi" id="program-studi" required > 
+                        <option value="">Pilih Program Studi</option>
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Teknik Elektro">Teknik Elektro</option>
+                        </select>
+                        <br>
+                        <small>
+                            Isi Prgram Studi diatas
+                        </small>
+                    </p>
+                    <p>
+                        <label for="angkatan">
+                            Angkatan
+                        </label>
+                        <br>
+                        <input type="number" id="angkatan" name="angkatan" placeholder="Contoh: 2024" required min="2018" max="2026">
+                        <br>
+                        <small>
+                            Isi Angkatan diatas
+                        </small></p>
+                    <p>
+                        <label for="email">
+                            Email
+                        </label>
+                        <br>
+                        <input type="email" id="email" name="email" placeholder="Contoh: email@example.com" >
+                        <br>
+                        <small>
+                            Isi Email diatas
+                        </small></p>
+                    </p>
+                    <p>
+                        <button type="submit">
+                            Simpan Data Mahasiswa
+                        </button>
+                        <button type="reset">
+                            Reset Formulir
+                        </button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
