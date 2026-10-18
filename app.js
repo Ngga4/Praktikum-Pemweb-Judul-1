@@ -25,6 +25,7 @@ let dataMahasiswa = [
 
 // 2. Elemen Dom Utama.
 const formTambah = document.getElementById("from-tambah-mahasiswa");
+const inputSearch = document.getElementById("input-search")
 const inputnpm = document.getElementById("npm");
 const inputNama = document.getElementById("nama"); 
 const inputProdi = document.getElementById("prodi"); 
@@ -32,8 +33,8 @@ const inputAngkatan = document.getElementById("angkatan");
 const inputEmail = document.getElementById("email"); 
 const alertBox = document.getElementById("alert-box");
 const tabelBody = document.getElementById("tabel-body-mahasiswa");
-const tabelBadge = document.getElementById("total-mahasiswa-badge");
-const tabelInfo = document.getElementById("total-mahasiswa-info");
+const totalBadge = document.getElementById("total-mahasiswa-badge");
+const totalInfo = document.getElementById("total-mahasiswa-info");
 
 /*
 // Seleksi Elemen Formulir Tambah Mahasiswa
